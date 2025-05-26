@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1025576713244",
+    "project_id": "ricesencepro-351a6",
+    "storage_bucket": "ricesencepro-351a6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025576713244:android:0e83f55899a4e6c91373d9",
+        "android_client_info": {
+          "package_name": "com.johnnyd.ricesence"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWgM1bV5RNExab99XovEhze5gV2huS_gA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
