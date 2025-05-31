@@ -1,0 +1,557 @@
+[
+  {
+    "name": "Rice Stem Borer",
+    "aliases": ["stem borer"],
+    "type": "Insect Pest",
+    "description": "Stem borers are moths whose larvae bore into rice stems, affecting plant development. Major species include Scirpophaga incertulas and Chilo suppressalis.",
+    "damage": "Causes 'deadheart' during vegetative stage and 'whitehead' during reproductive stage, reducing tiller and grain production.",
+    "management": {
+      "biological": [
+        "Release of Trichogramma japonicum egg parasitoids",
+        "Encourage predators like spiders, ants, and mirid bugs"
+      ],
+      "chemical": [
+        "Apply Cartap hydrochloride 4G at 25 kg/ha",
+        "Use Chlorpyriphos 20 EC at 2 ml/L during early infestation",
+        " soaking of the roots of the seedlings in 0.02 chlorpyriphos for 12-14 hrs before transplanting (30 days protection).",
+        " Apply the following insecticides based on fipronil, chlorpyrifos or chlorantraniliprole either as granules or spray once the threshold is reached (25-30 male moths/trap/week). Do not use broad-spectrum insecticides to fight pests."
+      ],
+      "cultural": [
+        "Clip seedling tips before transplanting",
+        "Remove and destroy stubbles after harvest",
+        "Use light traps to catch adult moths",
+        "Apply nitrogen fertilizer and manure moderately"
+      ],
+      "organic": [
+        "Apply neem-based biopesticide (Azadirachtin) at 2 ml/L",
+        "Use pheromone traps to disrupt mating"
+      ]
+    }
+  },
+  {
+    "name": "Rice Leaf Folder",
+    "aliases": ["leaf folder"],
+    "type": "Insect Pest",
+    "description": "The larva of this pest folds rice leaves and feeds inside, reducing photosynthesis.",
+    "damage": "Results in yellowing and drying of leaves and poor grain filling.",
+    "management": {
+      "biological": [
+        "Release Trichogramma chilonis at 50,000/ha",
+        "Conserve natural predators like spiders"
+      ],
+      "chemical": [
+        "Spray Lambda-cyhalothrin 5 EC at 1 ml/L",
+        "Use Chlorantraniliprole for heavy infestation"
+      ],
+      "cultural": [
+        "Avoid dense planting",
+        "Ensure balanced nitrogen fertilization"
+      ],
+      "organic": [
+        "Spray neem oil at 2%",
+        "Use pheromone traps at field boundaries"
+      ]
+    }
+  },
+  {
+    "name": "Rice Blast",
+    "aliases": ["blast", "rice blast", "RB"],
+    "type": "Fungal Disease",
+    "description": "Caused by Pyricularia oryzae, this fungus affects all above-ground parts of the plant.",
+    "damage": "Reduces yield by damaging leaves, nodes, and panicles. Severe infections cause lodging and grain loss.",
+    "management": {
+      "biological": [
+        "Apply Pseudomonas fluorescens as seed and foliar spray",
+        "Use Trichoderma spp. to reduce pathogen buildup"
+      ],
+      "chemical": [
+        "Spray Tricyclazole 75 WP at 0.6 g/L",
+        "Use Propiconazole at early flowering stage"
+      ],
+      "cultural": [
+        "Avoid excessive nitrogen fertilizer",
+        "Ensure proper field drainage",
+        "Use blast-resistant varieties",
+        "Maintain control of weeds and alternative hosts"
+
+      ],
+      "organic": [
+        "Spray neem and garlic extract mix",
+        "Adopt SRI method to improve plant health"
+      ]
+    }
+  },
+  {
+    "name": "Bacterial Leaf Blight",
+    "aliases": ["blb", "bacterial blight", "leaf blight"],
+    "type": "Bacterial Disease",
+    "description": "Caused by Xanthomonas oryzae pv. oryzae, this disease spreads rapidly through wounds and water.",
+    "damage": "Symptoms include yellowing and drying of leaves from tips down, reducing photosynthetic area.",
+    "management": {
+      "biological": [
+        "Promote antagonistic bacteria like Bacillus spp."
+      ],
+      "chemical": [
+        "Spray Streptocycline (100 ppm) + Copper oxychloride (3 g/L)"
+      ],
+      "cultural": [
+        "Avoid waterlogging and excess nitrogen",
+        "Use resistant varieties and clean seeds"
+      ],
+      "organic": [
+        "Apply cow urine + turmeric foliar mix",
+        "Use compost tea sprays to suppress bacteria"
+      ]
+    }
+  },
+  {
+    "name": "Brown Spot",
+    "aliases": [
+      "brown spot"
+    ],
+    "type": "Fungal Disease",
+    "description": "Caused by Bipolaris oryzae, brown spot affects leaves, grains, and other aerial parts.",
+    "damage": "Causes brown lesions on leaves and grains, poor seed germination, and yield loss.",
+    "management": {
+      "biological": [
+        "Apply Pseudomonas fluorescens as foliar spray"
+      ],
+      "chemical": [
+        "Spray Mancozeb 75 WP at 2.5g/L of water"
+      ],
+      "cultural": [
+        "Use disease-free seeds",
+        "Maintain field sanitation"
+      ],
+      "organic": [
+        "Use neem oil + garlic extract mix",
+        "Apply compost tea foliar spray"
+      ]
+    }
+  },
+  {
+    "name": "Aphid",
+    "aliases": [
+      "aphid",
+      "rice aphid"
+    ],
+    "type": "Insect Pest",
+    "description": "Tiny insects that suck sap from leaves and stems; often found in clusters.",
+    "damage": "Cause yellowing, leaf curling, and sooty mold due to honeydew secretion.",
+    "management": {
+      "biological": [
+        "Encourage ladybird beetles and lacewings"
+      ],
+      "chemical": [
+        "Spray Imidacloprid 17.8 SL at 0.3 ml/L"
+      ],
+      "cultural": [
+        "Avoid excess nitrogen",
+        "Destroy affected plant parts"
+      ],
+      "organic": [
+        "Spray neem oil 3%",
+        "Use insecticidal soap"
+      ]
+    }
+  },
+  {
+    "name": "Bacterial Panicle Blight",
+    "aliases": [
+      "bacterialpanicleblight"
+    ],
+    "type": "Bacterial Disease",
+    "description": "Caused by Burkholderia glumae, affects panicles during flowering.",
+    "damage": "Results in empty or discolored grains and panicle sterility.",
+    "management": {
+      "biological": [
+        "Use Bacillus subtilis as biological control agent"
+      ],
+      "chemical": [
+        "No highly effective chemicals, but copper compounds may suppress"
+      ],
+      "cultural": [
+        "Avoid excessive nitrogen",
+        "Use resistant varieties"
+      ],
+      "organic": [
+        "Use compost tea",
+        "Maintain crop rotation"
+      ]
+    }
+  },
+  {
+    "name": "Dirty Panicle",
+    "aliases": [
+      "dirty panicle"
+    ],
+    "type": "Fungal Complex",
+    "description": "A mixture of several fungal infections causes the panicles to appear dirty or moldy.",
+    "damage": "Affects grain quality and reduces market value.",
+    "management": {
+      "biological": [
+        "Apply Trichoderma spp. in soil"
+      ],
+      "chemical": [
+        "Use Propiconazole at booting stage"
+      ],
+      "cultural": [
+        "Avoid delayed harvesting",
+        "Ensure proper field drainage"
+      ],
+      "organic": [
+        "Apply cow dung slurry + neem cake",
+        "Foliar spray of compost extract"
+      ]
+    }
+  },
+  {
+    "name": "Rice Hispa",
+    "aliases": [
+      "rice hispa", "hispa", "hispa rice","Hispa"
+    ],
+    "type": "Insect Pest",
+    "description": "Small beetle whose larvae mine inside leaves, while adults feed on leaf surface.",
+    "damage": "Leaves appear streaked and whitish; reduces photosynthesis.",
+    "management": {
+      "biological": [
+        "Release Tetrastichus hispae parasitoid"
+      ],
+      "chemical": [
+        "Spray Chlorpyriphos 20 EC at 2 ml/L",
+        "control population using following active ingredient: malathion, cypermethrin, fenthoate"
+      ],
+      "cultural": [
+        "Remove and destroy infested leaves",
+        "Early planting to avoid peak population",
+        "Cut the shoot tip to prevent egg-laying",
+        "Apply a crop rotation to break the life cycle of the pest"
+      ],
+      "organic": [
+        "Neem seed kernel extract 5%",
+        "Ash dusting on foliage"
+      ]
+    }
+  },
+  {
+    "name": "Narrow Brown Spot",
+    "aliases": [
+      "narrow brown spot",
+      "narrow_brown_spot",
+      "Narrow_brown_Spot"
+    ],
+    "type": "Fungal Disease",
+    "description": "Caused by Cercospora oryzae, appears as narrow brown lesions on leaves.",
+    "damage": "Reduces photosynthetic area, may lead to reduced grain quality and yield.",
+    "management": {
+      "biological": [
+        "Apply Trichoderma spp. to suppress fungal growth"
+      ],
+      "chemical": [
+        "Spray Mancozeb or Carbendazim during early symptoms"
+      ],
+      "cultural": [
+        "Use resistant varieties",
+        "Maintain proper field drainage"
+      ],
+      "organic": [
+        "Spray compost tea",
+        "Neem oil extract applications"
+      ]
+    }
+  },
+  {
+    "name": "Rice Leafhopper",
+    "aliases": [
+      "rice leafhopper",
+      "leafhopper"
+    ],
+    "type": "Insect Pest",
+    "description": "Sap-sucking insect that also transmits viral diseases like rice tungro.",
+    "damage": "Yellowing and curling of leaves; vector for viral diseases.",
+    "management": {
+      "biological": [
+        "Encourage natural predators like spiders and wasps"
+      ],
+      "chemical": [
+        "Spray Imidacloprid 0.3 ml/L or Thiamethoxam"
+      ],
+      "cultural": [
+        "Remove infected plants",
+        "Use resistant varieties"
+      ],
+      "organic": [
+        "Neem oil spray 2%",
+        "Garlic-chili extract"
+      ]
+    }
+  },
+  {
+    "name": "Rice Gall Midge",
+    "aliases": [
+      "rice gall midge",
+      "gall midge",
+      "RiceGallMidge"
+    ],
+    "type": "Insect Pest",
+    "description": "Larvae form silvery galls instead of panicles, reducing yield.",
+    "damage": "Silver shoots that do not produce grain.",
+    "management": {
+      "biological": [
+        "Use Platygaster orseoliae parasitoid"
+      ],
+      "chemical": [
+        "Apply Carbofuran granules at seedling stage"
+      ],
+      "cultural": [
+        "Early sowing",
+        "Avoid monocropping"
+      ],
+      "organic": [
+        "Use neem cake",
+        "Ash dusting at base of plants"
+      ]
+    }
+  },
+  {
+    "name": "Armyworm",
+    "aliases": [
+      "armyworm"
+    ],
+    "type": "Insect Pest",
+    "description": "Caterpillars that feed on rice foliage during night.",
+    "damage": "Causes defoliation; severe infestations destroy entire crop.",
+    "management": {
+      "biological": [
+        "Release Trichogramma parasitoids",
+        "Promote Tachinid flies"
+      ],
+      "chemical": [
+        "Spray Sevin 0.2% or Chlorantraniliprole"
+      ],
+      "cultural": [
+        "Plough fields to destroy pupae",
+        "Remove weeds"
+      ],
+      "organic": [
+        "Neem oil 3%",
+        "Use light traps at night"
+      ]
+    }
+  },
+  {
+    "name": "Bacterial Leaf Streak",
+    "aliases": [
+      "bacterial-leaf-streak"
+    ],
+    "type": "Bacterial Disease",
+    "description": "Caused by Xanthomonas oryzae pv. oryzicola, characterized by narrow, water-soaked lesions.",
+    "damage": "Lesions coalesce, reducing leaf function and yield.",
+    "management": {
+      "biological": [
+        "Use Bacillus subtilis foliar spray"
+      ],
+      "chemical": [
+        "Apply copper oxychloride (3g/L) early"
+      ],
+      "cultural": [
+        "Use resistant varieties",
+        "Avoid over-irrigation"
+      ],
+      "organic": [
+        "Foliar spray of turmeric + whey solution",
+        "Cow dung tea"
+      ]
+    }
+  },
+  {
+    "name": "Brown Planthopper",
+    "aliases": [
+      "brown plant hopper",
+      "bph"
+    ],
+    "type": "Insect Pest",
+    "description": "Major pest of rice that sucks sap and transmits viruses.",
+    "damage": "Causes 'hopper burn', leading to patches of dead plants.",
+    "management": {
+      "biological": [
+        "Introduce Cyrtorhinus lividipennis predator"
+      ],
+      "chemical": [
+        "Use Buprofezin 25 SC or Imidacloprid"
+      ],
+      "cultural": [
+        "Avoid dense planting",
+        "Alternate wetting and drying"
+      ],
+      "organic": [
+        "Apply neem oil 2%",
+        "Use pheromone traps"
+      ]
+    }
+  },
+  {
+    "name": "Dead Heart",
+    "aliases": [
+      "dead-heart",
+      "dead heart"
+    ],
+    "type": "Symptom (usually caused by borers)",
+    "description": "Central shoot dries while lower leaves remain green; symptom of stem borer attack.",
+    "damage": "Non-productive tillers; major yield loss.",
+    "management": {
+      "biological": [
+        "Release Trichogramma spp."
+      ],
+      "chemical": [
+        "Apply Cartap hydrochloride or Chlorpyrifos"
+      ],
+      "cultural": [
+        "Remove stubbles",
+        "Clip seedling tips"
+      ],
+      "organic": [
+        "Neem cake application",
+        "Light traps"
+      ]
+    }
+  },
+  {
+    "name": "False Smut",
+    "aliases": [
+      "false smut"
+    ],
+    "type": "Fungal Disease",
+    "description": "Caused by Ustilaginoidea virens, forms greenish-black spore balls on panicles.",
+    "damage": "Reduces grain quality; affects milling.",
+    "management": {
+      "biological": [
+        "Apply Trichoderma spp."
+      ],
+      "chemical": [
+        "Spray Propiconazole during booting stage"
+      ],
+      "cultural": [
+        "Remove and burn infected panicles",
+        "Avoid excess nitrogen"
+      ],
+      "organic": [
+        "Use neem + garlic paste spray",
+        "Ash treatment"
+      ]
+    }
+  },
+  {
+    "name": "Normal",
+    "aliases": [
+      "healthy",
+      "normal"
+    ],
+    "type": "Healthy",
+    "description": "Crop appears healthy with no visible symptoms of pests or diseases.",
+    "damage": "None",
+    "management": {
+      "biological": [],
+      "chemical": [],
+      "cultural": [
+        "Maintain regular field inspection",
+        "Balanced fertilization"
+      ],
+      "organic": [
+        "Continue organic compost and neem support"
+      ]
+    }
+  },
+  {
+    "name": "Rice Leaf Roller",
+    "aliases": [
+      "rice leaf roller",
+      "leaf roller"
+    ],
+    "type": "Insect Pest",
+    "description": "Larvae roll leaves and feed inside, forming white streaks.",
+    "damage": "Reduces photosynthesis, leading to stunted growth.",
+    "management": {
+      "biological": [
+        "Use Trichogramma chilonis",
+        "Promote wasp predators"
+      ],
+      "chemical": [
+        "Spray Lambda-cyhalothrin 5 EC"
+      ],
+      "cultural": [
+        "Avoid dense planting",
+        "Early planting"
+      ],
+      "organic": [
+        "Neem seed extract 5%",
+        "Use fish oil soap"
+      ]
+    }
+  },
+  {
+    "name": "Sheath Blight",
+    "aliases": [
+      "sheath-blight"
+    ],
+    "type": "Fungal Disease",
+    "description": "Caused by Rhizoctonia solani, appears as oval lesions on leaf sheath.",
+    "damage": "Reduces photosynthesis, increases lodging.",
+    "management": {
+      "biological": [
+        "Apply Pseudomonas fluorescens",
+        "Trichoderma harzianum"
+      ],
+      "chemical": [
+        "Spray Validamycin 3L or Hexaconazole"
+      ],
+      "cultural": [
+        "Avoid high plant density",
+        "Remove infected residues"
+      ],
+      "organic": [
+        "Use compost + cow urine foliar spray"
+      ]
+    }
+  },
+  {
+    "name": "Tungro",
+    "aliases": [
+      "tungro"
+    ],
+    "type": "Viral Disease",
+    "description": "Caused by rice tungro bacilliform and spherical viruses; transmitted by green leafhoppers.",
+    "damage": "Stunted plants, yellow-orange leaves, poor grain filling.",
+    "management": {
+      "biological": [
+        "Encourage natural enemies of leafhoppers"
+      ],
+      "chemical": [
+        "Spray Imidacloprid to control vectors"
+      ],
+      "cultural": [
+        "Use resistant varieties",
+        "Early planting"
+      ],
+      "organic": [
+        "Neem oil 3%",
+        "Ash application to deter vectors"
+      ]
+    }
+  },
+  {
+    "name": "Undefine",
+    "aliases": [
+      "No disease detected",      
+    ],
+    "type": "No disease detected",
+    "description": "no disease found",
+    "damage": "None",
+    "management": {
+      "biological": [],
+      "chemical": [],
+      "cultural": [],
+      "organic": []
+    }
+  }
+]

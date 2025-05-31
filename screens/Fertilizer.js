@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { View, Text, SafeAreaView, StyleSheet, TouchableOpacity, ScrollView } from "react-native";
 import { Colors } from "@/constants/Colors";
 import { Picker } from "@react-native-picker/picker";
+import * as Notifications from 'expo-notifications';
+
 
 const riceFertilizerData = {
   loamy: {
@@ -123,6 +125,7 @@ const riceFertilizerData = {
   }
 };
 
+
 const Fertilizer = () => {
   const [soilType, setSoilType] = useState("loamy");
   const [cropStage, setCropStage] = useState("seedling");
@@ -135,6 +138,19 @@ const Fertilizer = () => {
     } else {
       setRecommendation(null);
     }
+  };
+
+  const scheduleFertilizerReminder = async () => {
+    await Notifications.scheduleNotificationAsync({
+    content: {
+      title: "Fertilizer Reminder",
+      body: "It's time to apply fertilizer for your rice field!",
+    },
+    trigger: {
+      seconds: 60 * 60 * 24, // 24 hours later
+      repeats: true,
+    },
+  });
   };
 
   return (

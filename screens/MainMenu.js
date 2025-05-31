@@ -1,8 +1,7 @@
 import { Colors } from "@/constants/Colors";
-import React, {useState} from "react";
-import { View, Text, TouchableOpacity, SafeAreaView, Image, StyleSheet, Button, ScrollView } from "react-native";
-import * as ImagePicker from "expo-image-picker"
-import { Dimensions } from "react-native";
+import * as ImagePicker from "expo-image-picker";
+import React, { useState } from "react";
+import { Dimensions, Image, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Swiper from "react-native-swiper";
 
 const { width } = Dimensions.get('window');
@@ -58,24 +57,6 @@ const MainMenu = ({ navigation }) => {
       {/* Header Section */}
       <View style={styles.logoContainer}>
       <Image source={require("../assets/logo.png")} style={{ width: 220, height: 40, marginBottom: 10 }} />
-
-{/*       
-    <View  >      
-            <TouchableOpacity 
-              style={{
-                backgroundColor: Colors.secondary,
-                padding: 10,
-                borderRadius: 90,
-                // margin: 20,
-                alignItems: "center",
-              }}
-              onPress={() => navigation.navigate("Login")}
-            >
-             <Image source={require("../assets/Arrow2.png")} style={{}} />
-
-            </TouchableOpacity>
-
-    </View> */}
 
       </View>
       
@@ -141,10 +122,16 @@ const MainMenu = ({ navigation }) => {
             
           </View>
           </View>
-          <TouchableOpacity style={styles.takePictureButton} onPress={takePicture}>
-          <Text style={{ color:Colors.white, fontSize: 16, fontWeight:"500"}}>Take a picture</Text>
+          <TouchableOpacity style={styles.takePictureButton} 
+          // onPress={takePicture}
+          onPress={() => navigation.navigate("Pest")}
+          >
+          <Text style={{ color:Colors.white, fontSize: 16, fontWeight:"500"}}
+          onPress={() => navigation.navigate("Pest")}
+          >Take a picture</Text>
           
         </TouchableOpacity>
+
         <Text  onPress={pickImage} style={{ color: Colors.primary,fontSize: 12, fontWeight:"500", textAlign: "center", marginTop: 5}}>Upload from gallery</Text>
         {/* Show the captured image */}
         {image && <Image source={{ uri: image }} style={styles.imagePreview} />}

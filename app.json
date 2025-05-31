@@ -35,10 +35,23 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+      "expo-notifications",
+        {
+          "icon": "./assets/RiceSence.png",
+          "color": "#ffffff",
+          // "sounds": [""]
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "notification": {
+      "icon": "./assets/RiceSence.png",
+      "color": "#ffffff"
     }
+
   }
 }
