@@ -213,7 +213,8 @@ const styles = StyleSheet.create({
     marginVertical: 10
   },
   picker: {
-    marginBottom: 15
+    marginBottom: 15,
+    color: Colors.black,
   },
   btn: {
     backgroundColor: Colors.secondary,

@@ -197,5 +197,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: 3,
     backgroundColor: Colors.ash2,
+    color: Colors.black,
   },
 });
