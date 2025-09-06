@@ -542,7 +542,7 @@
   {
     "name": "Undefine",
     "aliases": [
-      "No disease detected",      
+      "No disease detected"      
     ],
     "type": "No disease detected",
     "description": "no disease found",

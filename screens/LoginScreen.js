@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     marginBottom: 10,
-    marginTop: 3,
+    marginTop: 3,    
     backgroundColor: Colors.ash2,
     color: Colors.black,
   },

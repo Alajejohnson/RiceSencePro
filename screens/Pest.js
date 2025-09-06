@@ -130,8 +130,6 @@ const [notificationListener, setNotificationListener] = useState(null);
     return token;
   }
 
-
-
   const getCurrentUser = async () => {
     try {
       const userData = await AsyncStorage.getItem("userData");
@@ -241,24 +239,26 @@ const [notificationListener, setNotificationListener] = useState(null);
     }
   };
 
-  const saveImageUrlToFirebase = async (url, detectedClass) => {
-    const user = await getCurrentUser();
-    if (!user) {
-      console.error("No user found. Can't save.");
-      return;
-    }
+const saveImageUrlToFirebase = async (url, detectedClass) => {
+  const userId = await AsyncStorage.getItem("userId");
+  console.log("Fetched userId:", userId);
 
-    // const userId = user.userId;
-    const userId = await AsyncStorage.getItem('userId');
+  if (!userId) {
+    console.error("No userId found in AsyncStorage. Can't save.");
+    return;
+  }
 
-    const historyRef = ref(database, `users/${userId}/pestHistory`);
+  const historyRef = ref(database, `users/${userId}/pestHistory`);
 
-    await push(historyRef, {
-      imageUrl: url,
-      uploadedAt: new Date().toISOString(),
-      diagnosis: matchedRule?.name || detectedClass || "Unknown",
-    });
-  };
+  await push(historyRef, {
+    imageUrl: url,
+    uploadedAt: new Date().toISOString(),
+    diagnosis: matchedRule?.name || detectedClass || "Unknown",
+  });
+
+  console.log(" History saved for user:", userId);
+};
+
 
   const handleImage = async (result) => {
     if (!result.canceled) {

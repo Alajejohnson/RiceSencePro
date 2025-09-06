@@ -1008,3 +1008,72 @@ async function registerForPushNotificationsAsync() {
 //     }
 
 // })
+
+
+
+
+--------------------------eas=/----------------
+// {
+//   "cli": {
+//     "version": ">= 16.12.0",
+//     "appVersionSource": "remote"
+//   },
+//   "build": {
+//     "development": {
+//       "developmentClient": true,
+//       "distribution": "internal"
+//     },
+//     "preview": {
+//       "distribution": "internal"
+//     },
+//     "production": {
+//       "autoIncrement": true
+//     }
+//   },
+//   "submit": {
+//     "production": {}
+//   }
+// }
+
+
+--------------------------EAS PROFILE-------------
+
+Configuration: Build Credentials tS2amkkY1I (Default)  
+Keystore
+Type                JKS
+Key Alias           efe29774bf812d50dc973343d443bbb8
+MD5 Fingerprint     DB:42:76:50:90:26:E3:1F:C8:3F:80:E5:1E:1A:E3:9B
+SHA1 Fingerprint    D3:46:EB:98:3F:D6:2D:1E:3B:4D:17:5A:DC:EA:B2:12:10:20:EE:0B
+SHA256 Fingerprint  DA:BD:AC:02:D8:F5:13:9A:D7:C8:C0:66:39:CD:05:E1:AE:F3:21:37:A4:FA:BF:F8:71:82:43:99:40:5C:08:4E
+Updated             2 months ago
+
+
+
+Sensitive Keystore information:
+    Keystore password: 5e00e6e4e705298dbd237c43fffb5587
+    Key alias:         efe29774bf812d50dc973343d443bbb8
+    Key password:      3e3db10d5aafd0d1025ad7028ac1c09d
+
+    Path to Keystore:  @johnny_d__RiceSence.jks
+
+
+
+------------
+  const saveImageUrlToFirebase = async (url, detectedClass) => {
+    const user = await getCurrentUser();
+    if (!user) {
+      console.error("No user found. Can't save.");
+      return;
+    }
+
+    // const userId = user.userId;
+    const userId = await AsyncStorage.getItem('userId');
+
+    const historyRef = ref(database, `users/${userId}/pestHistory`);
+
+    await push(historyRef, {
+      imageUrl: url,
+      uploadedAt: new Date().toISOString(),
+      diagnosis: matchedRule?.name || detectedClass || "Unknown",
+    });
+  };
